@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 
-import 'package:todo_app/ui_updates_demo.dart';
+// import 'package:todo_app/ui_updates_demo.dart';
+import 'package:todo_app/keys/keys.dart';
 
 void main() {
+  const numbers = [1, 2, 3, 4, 5,];
+  //numbers = [6, 7, 8];
+  numbers.add(4);
   runApp(const App());
 }
 
@@ -17,7 +21,7 @@ class App extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Flutter Internals'),
         ),
-        body: const UIUpdatesDemo(),
+        body: const Keys(),
       ),
     );
   }
